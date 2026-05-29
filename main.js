@@ -33,9 +33,9 @@ function calculaTempo(tempoObjetivo) {
     horas %= 24;
 
     if (tempofinal > 0) {
-        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos.";
+        return [dias,horas,minutos,segundos]
     } else {
-        return "prazo finalizado.";
+        return [0,0,0,0];
     }
 }
 
